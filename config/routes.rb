@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 
   post "/sessions" => "sessions#create"
 
-
-  
-
+  get "/pets" => "pets#index"
+  get "/pets/:id" => "pets#show"
+  post "/pets" => "pets#create"
   # Defines the root path route ("/")
   # root "posts#index"
 end
