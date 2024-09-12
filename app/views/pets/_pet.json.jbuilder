@@ -1,2 +1,5 @@
-json.extract! pet, :id, :created_at, :updated_at
-json.url pet_url(pet, format: :json)
+json.id pet.id
+json.name pet.name
+json.age pet.age
+json.breed pet.breed
+json.user_id pet.user_id
